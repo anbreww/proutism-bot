@@ -1,0 +1,20 @@
+{
+  "name": "proutoserver",
+  "version": "1.0.0",
+  "description": "Proutometer back-end to Telegram bot API",
+  "main": "index.js",
+  "dependencies": {
+    "firebase": "^3.9.0",
+    "firebase-admin": "^4.2.1",
+    "node-telegram-bot-api": "^0.27.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "prout"
+  ],
+  "author": "Andrew Watson",
+  "license": "ISC"
+}
