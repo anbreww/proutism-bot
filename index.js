@@ -1,10 +1,12 @@
+require('dotenv').config({path: 'variables.env'})
+
 // Telegram config
 const config = require('./config/config.js')
 const token = config.bot_token;
 
 // Firebase config
 const firebase_config = require('./config/firebase_config.js')
-const serviceAccount = require('./config/proutometer-serviceaccount.json')
+const serviceAccount = require('./config/proutometer_serviceaccount.json')
 
 
 const TelegramBot = require('node-telegram-bot-api');
@@ -23,6 +25,7 @@ firebase_admin.initializeApp(firebase_config);
 
 var proutismRef = firebase_admin.database().ref('/');
 proutismRef.on('value', function(snapshot) {
+  console.log('Received data from firebase DB')
   console.log(snapshot.val())
     updateProutism(snapshot.val().proutism);
 })

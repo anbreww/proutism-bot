@@ -24,6 +24,20 @@ node index.js
 
 and start sending messages to the bot on Telegram.
 
+## Getting docker set up
+
+Build the image
+
+```bash
+docker build -t tunebird/proutism-bot .
+```
+
+Run it
+
+```bash
+docker run tunebird/proutism-bot
+```
+
 ## Author
 
 Andrew Watson - 2017

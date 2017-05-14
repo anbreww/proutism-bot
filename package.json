@@ -4,13 +4,15 @@
   "description": "Proutometer back-end to Telegram bot API",
   "main": "index.js",
   "dependencies": {
+    "dotenv": "^4.0.0",
     "firebase": "^3.9.0",
     "firebase-admin": "^4.2.1",
     "node-telegram-bot-api": "^0.27.1"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "keywords": [
     "prout"
