@@ -102,7 +102,7 @@ bot.onText(/\/register/i, (msg, match) => {
     registered: true
   };
   console.log(registration);
-  registrationRef.set(registration);
+  registrationRef.update(registration);
 
   const message = `
 Thanks for registering, ${name}. 
@@ -122,7 +122,7 @@ bot.onText(/\/unregister/i, (msg, match) => {
     registered: false
   };
   console.log(registration);
-  registrationRef.set(registration);
+  registrationRef.update(registration);
 
   const message = `
 Oh no ${name} :( So sad to see you go! 
